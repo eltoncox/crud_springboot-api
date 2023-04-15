@@ -1,7 +1,6 @@
-package com.elton.med.voll.api.medico;
+package com.elton.med.voll.api.domain.medico;
 
-import com.elton.med.voll.api.endereco.DadosEndereco;
-import jakarta.persistence.Enumerated;
+import com.elton.med.voll.api.domain.endereco.DadosEndereco;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
