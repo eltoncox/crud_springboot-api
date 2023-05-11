@@ -1,9 +1,10 @@
-package com.elton.med.voll.api.infra.security;
-
-import com.elton.med.voll.api.domain.usuario.DadosAutenticacao;
-import com.elton.med.voll.api.domain.usuario.Usuario;
+package com.elton.med.voll.api.controller;
 
 import jakarta.validation.Valid;
+import com.elton.med.voll.api.domain.usuario.DadosAutenticacao;
+import com.elton.med.voll.api.domain.usuario.Usuario;
+import com.elton.med.voll.api.infra.security.DadosTokenJWT;
+import com.elton.med.voll.api.infra.security.TokenService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -34,6 +35,3 @@ public class AutenticacaoController {
     }
 
 }
-
-
-

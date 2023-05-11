@@ -1,18 +1,20 @@
 package com.elton.med.voll.api.domain.consulta;
 
+import com.elton.med.voll.api.domain.medico.Especialidade;
 import jakarta.validation.constraints.Future;
 import jakarta.validation.constraints.NotNull;
 
 import java.time.LocalDateTime;
 
 public record DadosAgendamentoConsulta(
-        Long IdMedico,
+        Long idMedico,
 
         @NotNull
         Long idPaciente,
 
         @NotNull
-        @Future // data apenas pode ser agenda no futuro
-        LocalDateTime data) {
+        @Future
+        LocalDateTime data,
 
+        Especialidade especialidade) {
 }
